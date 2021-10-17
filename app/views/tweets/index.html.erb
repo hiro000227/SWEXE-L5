@@ -1,0 +1,5 @@
+<% @tweets.each do |e| %>
+<%= e.message %>
+<%= link_to '削除', "/tweets/#{e.id}", method: :delete %>
+<br>
+<% end %>
